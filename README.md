@@ -1,4 +1,4 @@
-# AlsongSubtitleUploader
+# AlsongSubtitleUploader [![Github All Releases](https://img.shields.io/github/downloads/JellyBrick/AlsongSubtitleUploader/total.svg)]()
 
 > 알송 서버에 `.srt` 자막 파일을 업로드 할 수 있게 해줍니다.
 > 더 편리하게 가사를 편집하고, 알송 서버에 업로드 해보세요.
