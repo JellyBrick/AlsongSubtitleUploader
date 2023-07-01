@@ -19,7 +19,7 @@ repositories {
 }
 
 compose {
-    kotlinCompilerPlugin.set("org.jetbrains.compose.compiler:compiler:1.4.7")
+    kotlinCompilerPlugin.set("org.jetbrains.compose.compiler:compiler:1.4.8")
     kotlinCompilerPluginArgs.add("suppressKotlinVersionCompatibilityCheck=1.8.22")
 }
 
