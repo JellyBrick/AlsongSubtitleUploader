@@ -1,10 +1,10 @@
 package be.zvz.alsonguploader.srt
 
-import java.io.BufferedInputStream
+import org.apache.any23.encoding.TikaEncodingDetector
 import java.io.File
-import java.io.FileInputStream
 import java.io.FileOutputStream
 import java.io.IOException
+import java.nio.charset.Charset
 import java.nio.charset.StandardCharsets
 import java.util.Scanner
 
@@ -19,7 +19,8 @@ class SubtitleFile {
     /* Load an existing SubtitleFile from a File. */
     constructor(file: File) {
         subtitles = mutableListOf()
-        BufferedInputStream(FileInputStream(file)).use {
+        val encoding = file.inputStream().use { Charset.forName(TikaEncodingDetector().guessEncoding(it)) }
+        file.inputStream().bufferedReader(encoding).use {
             val scanner = Scanner(it)
 
             if (scanner.hasNextLine()) {

@@ -102,7 +102,6 @@ object App {
             when (currentScreen) {
                 Screen.FilePicker -> filePickerScreen(
                     onFilesSelected = { mp3File, metadata, srtFile, isModifying, originalLyric ->
-                        // Perform file validation or any other logic
                         currentScreen = Screen.Upload(mp3File, metadata, srtFile, isModifying, originalLyric)
                     },
                 )

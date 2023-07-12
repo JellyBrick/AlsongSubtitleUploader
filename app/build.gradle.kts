@@ -43,6 +43,8 @@ kotlin {
                 implementation("io.github.pdvrieze.xmlutil:serialization-jvm:0.86.0")
                 implementation("ws.schild:jave-all-deps:3.3.1")
                 implementation("commons-io:commons-io:2.13.0")
+                implementation("org.apache.any23:apache-any23-encoding:2.7")
+                implementation("org.jsoup:jsoup:1.16.1")
             }
         }
         val jvmTest by getting
@@ -52,6 +54,7 @@ kotlin {
 compose.desktop {
     application {
         mainClass = "be.zvz.alsonguploader.MainKt"
+        jvmArgs += "-Dfile.encoding=UTF-8"
         nativeDistributions {
             modules("java.instrument", "java.scripting", "java.sql", "jdk.unsupported")
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
