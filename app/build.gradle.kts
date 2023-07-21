@@ -8,7 +8,7 @@ plugins {
 
 group = "be.zvz.alsonguploader"
 val isDev = false
-val versionNumber = "1.0.1"
+val versionNumber = "1.0.2"
 version = "${versionNumber}${if (isDev) "-SNAPSHOT" else ""}"
 
 repositories {
