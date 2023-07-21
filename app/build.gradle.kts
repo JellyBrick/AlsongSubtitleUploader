@@ -1,7 +1,7 @@
 import org.jetbrains.compose.desktop.application.dsl.TargetFormat
 
 plugins {
-    kotlin("multiplatform") version "1.8.22"
+    kotlin("multiplatform") version "1.9.0"
 
     id("org.jetbrains.compose") version "1.4.1"
 }
@@ -19,7 +19,7 @@ repositories {
 }
 
 compose {
-    kotlinCompilerPlugin.set("org.jetbrains.compose.compiler:compiler:1.4.8")
+    kotlinCompilerPlugin.set("org.jetbrains.compose.compiler:compiler:1.5.0")
     kotlinCompilerPluginArgs.add("suppressKotlinVersionCompatibilityCheck=1.8.22")
 }
 
