@@ -56,7 +56,7 @@ compose.desktop {
         mainClass = "be.zvz.alsonguploader.MainKt"
         jvmArgs += "-Dfile.encoding=UTF-8"
         nativeDistributions {
-            modules("java.instrument", "java.scripting", "java.sql", "jdk.unsupported")
+            modules("java.instrument", "java.scripting", "java.sql", "jdk.unsupported", "java.naming", "java.management")
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
             packageName = "AlsongUploader"
             packageVersion = versionNumber
