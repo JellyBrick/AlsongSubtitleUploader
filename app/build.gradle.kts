@@ -3,7 +3,7 @@ import org.jetbrains.compose.desktop.application.dsl.TargetFormat
 plugins {
     kotlin("multiplatform") version "1.9.10"
 
-    id("org.jetbrains.compose") version "1.4.3"
+    id("org.jetbrains.compose") version "1.5.0"
 }
 
 group = "be.zvz.alsonguploader"
