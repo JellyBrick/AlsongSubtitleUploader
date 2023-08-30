@@ -39,7 +39,7 @@ kotlin {
                 implementation("com.github.JellyBrick:alsong-kt:3.1.0")
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-swing:1.7.3")
                 implementation("net.sf.javamusictag:jid3lib:0.5.4")
-                implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1")
+                implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
                 implementation("io.github.pdvrieze.xmlutil:serialization-jvm:0.86.1")
                 implementation("ws.schild:jave-all-deps:3.3.1")
                 implementation("commons-io:commons-io:2.13.0")
