@@ -44,7 +44,7 @@ kotlin {
                 implementation("ws.schild:jave-all-deps:3.3.1")
                 implementation("commons-io:commons-io:2.13.0")
                 implementation("org.apache.any23:apache-any23-encoding:2.7")
-                implementation("org.jsoup:jsoup:1.16.1")
+                implementation("org.jsoup:jsoup:1.18.1")
             }
         }
         val jvmTest by getting
