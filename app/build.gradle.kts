@@ -37,7 +37,7 @@ kotlin {
             dependencies {
                 implementation(compose.desktop.currentOs)
                 implementation("com.github.JellyBrick:alsong-kt:3.1.0")
-                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-swing:1.7.3")
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-swing:1.9.0")
                 implementation("net.sf.javamusictag:jid3lib:0.5.4")
                 implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
                 implementation("io.github.pdvrieze.xmlutil:serialization-jvm:0.86.1")
